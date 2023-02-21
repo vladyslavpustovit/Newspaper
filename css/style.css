@@ -1,0 +1,275 @@
+/* Global styles */
+* {
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+.header-top {
+  padding: 20px 0;
+}
+
+.header-top__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.header-top__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top__nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header-top__nav li:last-child {
+  margin-right: 0;
+}
+
+.header-top__nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-top__search form {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.header-top__search input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.header-top__search button[type="submit"] {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.header-bottom {
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+.header-bottom__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-bottom__nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header-bottom__nav li:last-child {
+  margin-right: 0;
+}
+
+.header-bottom__nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Featured article styles */
+.featured {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.featured__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.featured__image img {
+  width: 100%;
+  height: auto;
+}
+
+.featured__content {
+  margin-top: 20px;
+}
+
+.featured__link {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.featured__link:hover {
+  background-color: #444;
+}
+
+/* Articles styles */
+.articles__grid {
+  display: grid;
+  /*  grid-template-columns: repeat(1, 1fr); */
+  grid-gap: 30px;
+}
+
+.article {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.article__image img {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.article__excerpt {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.article__link {
+  display: inline-block;
+}
+
+.sep-line {
+  max-height: 120px;
+  padding: 0;
+  margin: auto;
+  display: block;
+}
+
+.footer-top {
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  margin-top: 3vw;
+}
+
+.footer-top__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top__nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-top__nav li:last-child {
+  margin-right: 0;
+}
+
+.footer-top__nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+fa-solid {
+}
+
+fa-magnifying-glass {
+}
+
+@media only screen and (max-width: 600px) {
+  .articles__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .article {
+    background-color: lightgrey;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .articles__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .article {
+    background-color: white;
+  }
+}
